@@ -1330,3 +1330,83 @@ margin-top:15px;
 font-family:'Playfair Display', serif;
 
 }
+
+
+
+/* =====================================================
+   PUBLICATION LIST
+====================================================== */
+
+.publication-list{
+    list-style: decimal;
+    padding-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.publication-list li{
+    margin-bottom: 24px;
+    padding: 18px 22px;
+    border-left: 4px solid #f4b942;
+    background: rgba(255,255,255,0.04);
+    border-radius: 0 10px 10px 0;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: #e8e8e8;
+    text-align: justify;
+    transition: all 0.3s ease;
+}
+
+.publication-list li:hover{
+    background: rgba(244,185,66,0.08);
+    transform: translateX(5px);
+}
+
+.publication-list b{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.publication-list i{
+    color: #f4b942;
+    font-style: italic;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.publication-list a{
+    color: #7cc7ff;
+    text-decoration: none;
+}
+
+.publication-list a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* =====================================================
+   HERO PHOTO
+====================================================== */
+
+.hero-photo{
+    text-align: center;
+}
+
+.hero-photo img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+
+    display: block;
+    margin: 0 auto;
+
+    border-radius: 50%;
+    border: 5px solid #f4b942;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+
+    transition: transform 0.3s ease;
+}
+
+.hero-photo img:hover{
+    transform: scale(1.04);
+}
