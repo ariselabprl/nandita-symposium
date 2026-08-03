@@ -125,3 +125,31 @@ topBtn.addEventListener("click",()=>{
     });
 
 });
+
+
+/* ==========================================
+   Biography Read More
+========================================== */
+
+const bioBtn = document.getElementById("bioBtn");
+const moreBio = document.getElementById("moreBio");
+
+if (bioBtn && moreBio) {
+
+    bioBtn.addEventListener("click", () => {
+
+        if (moreBio.style.display === "none") {
+
+            moreBio.style.display = "block";
+            bioBtn.innerHTML = "Read Less";
+
+        } else {
+
+            moreBio.style.display = "none";
+            bioBtn.innerHTML = "Read More";
+
+        }
+
+    });
+
+}
