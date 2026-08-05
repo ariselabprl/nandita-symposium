@@ -84,7 +84,6 @@ section{
 }
 
 
-
 /*=========================================
 TYPOGRAPHY
 =========================================*/
@@ -92,40 +91,35 @@ TYPOGRAPHY
 h1,h2,h3,h4,h5{
 
     font-family:'Playfair Display',serif;
-
     color:white;
-
-    line-height:1.1;
+    line-height:1.25;
 
 }
 
 h1{
 
-    font-size:2.3rem;
-
+    font-size:clamp(2.3rem,5vw,4.3rem);
     font-weight:700;
 
 }
 
 h2{
 
-    font-size:1.8rem;
-
+    font-size:clamp(1.5rem,3vw,2.7rem);
     margin-bottom:25px;
 
 }
 
 h3{
 
-    font-size:0.85rem;
+    font-size:clamp(1.2rem,2vw,1.45rem);
 
 }
 
 p{
 
     color:var(--text);
-
-    font-size:.50rem;
+    font-size:clamp(0.95rem,1.2vw,1.05rem);
 
 }
 
@@ -224,14 +218,13 @@ NAVBAR
 }
 
 
-
 /*=========================================
 HERO
 =========================================*/
 
 .hero{
 
-    min-height:100vh;
+    min-height:min(100vh, 900px);
 
     display:flex;
 
@@ -246,16 +239,15 @@ HERO
     overflow:hidden;
 
     background:
-
-    linear-gradient(rgba(7,20,33,.75),
-
-    rgba(7,20,33,.92)),
-
-    url("../images/hero/hero.jpg");
+        linear-gradient(rgba(7,20,33,.75),
+        rgba(7,20,33,.92)),
+        url("../images/hero/hero.jpg");
 
     background-size:cover;
-
     background-position:center;
+
+    padding:120px 0 80px;
+}
 
 }
 
@@ -268,19 +260,15 @@ HERO
     inset:0;
 
     background:
-
-    radial-gradient(circle at top right,
-
-    rgba(255,183,60,.20),
-
-    transparent 35%);
+        radial-gradient(circle at top right,
+        rgba(255,183,60,.20),
+        transparent 35%);
 
 }
 
 .hero .container{
 
     position:relative;
-
     z-index:10;
 
 }
@@ -291,7 +279,9 @@ HERO
 
     text-transform:uppercase;
 
-    letter-spacing:3px;
+    letter-spacing:2px;
+
+    font-size:clamp(0.9rem, 1vw + 0.6rem, 1.3rem);
 
     margin-bottom:20px;
 
@@ -299,7 +289,11 @@ HERO
 
 .hero h1{
 
-    margin-bottom:25px;
+    font-size:clamp(2rem, 5vw, 4.5rem);
+
+    line-height:1.15;
+
+    margin-bottom:20px;
 
 }
 
@@ -313,17 +307,21 @@ HERO
 
     color:white;
 
-    font-size:1.3rem;
+    font-size:clamp(1.2rem, 2vw, 2rem);
+
+    margin-bottom:25px;
 
 }
 
 .hero p{
 
-    font-size:0.95rem;
+    font-size:clamp(0.95rem, 1vw + 0.5rem, 1.25rem);
 
     max-width:760px;
 
-    margin:30px auto;
+    margin:25px auto;
+
+    line-height:1.8;
 
 }
 
@@ -1384,23 +1382,27 @@ font-family:'Playfair Display', serif;
 }
 
 /* =====================================================
-   HERO PHOTO
+   HERO PHOTO (Responsive)
 ====================================================== */
 
 .hero-photo{
     text-align: center;
+    margin: clamp(1rem, 2vw, 2rem) 0;
 }
 
 .hero-photo img{
-    width: 220px;
-    height: 220px;
+
+    width: clamp(140px, 18vw, 220px);
+    height: clamp(140px, 18vw, 220px);
+
     object-fit: cover;
 
     display: block;
     margin: 0 auto;
 
     border-radius: 50%;
-    border: 5px solid #f4b942;
+
+    border: clamp(3px, 0.35vw, 5px) solid #f4b942;
 
     box-shadow: 0 10px 25px rgba(0,0,0,0.35);
 
