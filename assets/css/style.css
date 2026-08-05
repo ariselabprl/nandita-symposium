@@ -98,28 +98,28 @@ h1,h2,h3,h4,h5{
 
 h1{
 
-    font-size:clamp(2.3rem,5vw,4.3rem);
+    font-size:clamp(2.1rem,5vw,3.5rem);
     font-weight:700;
 
 }
 
 h2{
 
-    font-size:clamp(1.5rem,3vw,2.7rem);
+    font-size:clamp(1.0rem,3vw,2.1rem);
     margin-bottom:25px;
 
 }
 
 h3{
 
-    font-size:clamp(1.2rem,2vw,1.45rem);
+    font-size:clamp(0.8rem,2vw,1.0rem);
 
 }
 
 p{
 
     color:var(--text);
-    font-size:clamp(0.95rem,1.2vw,1.05rem);
+    font-size:clamp(0.65rem,1.2vw,0.85rem);
 
 }
 
@@ -282,7 +282,7 @@ HERO
 
     letter-spacing:2px;
 
-    font-size:clamp(0.9rem, 1vw + 0.6rem, 1.3rem);
+    font-size:clamp(0.7rem, 1vw + 0.6rem, 1.0rem);
 
     margin-bottom:20px;
 
@@ -290,7 +290,7 @@ HERO
 
 .hero h1{
 
-    font-size:clamp(2rem, 5vw, 4.5rem);
+    font-size:clamp(1.4rem, 5vw, 3.5rem);
 
     line-height:1.15;
 
@@ -308,7 +308,7 @@ HERO
 
     color:white;
 
-    font-size:clamp(1.2rem, 2vw, 2rem);
+    font-size:clamp(0.9rem, 2vw, 1.5rem);
 
     margin-bottom:25px;
 
@@ -316,7 +316,7 @@ HERO
 
 .hero p{
 
-    font-size:clamp(0.95rem, 1vw + 0.5rem, 1.25rem);
+    font-size:clamp(0.65rem, 1vw + 0.5rem, 0.9rem);
 
     max-width:760px;
 
