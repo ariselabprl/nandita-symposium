@@ -177,11 +177,13 @@ NAVBAR
 
     color:white !important;
 
-    margin-left:18px;
+    margin-left:16px;
 
-    font-size:.95rem;
+    font-size:.92rem;
 
     position:relative;
+
+    white-space: nowrap;
 
 }
 
