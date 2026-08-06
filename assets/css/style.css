@@ -1283,18 +1283,45 @@ section {
    GALLERY
 ========================= */
 
+.gallery-card{
 
-.gallery-card {
+    overflow:hidden;
 
-background:white;
+    border-radius:15px;
 
-padding:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
 
-border-radius:12px;
+    transition:.3s ease;
 
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    background:none;
 
-height:100%;
+    padding:0;
+
+}
+
+.gallery-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.gallery-card img{
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.4s ease;
+
+}
+
+.gallery-card:hover img{
+
+    transform:scale(1.05);
 
 }
 
