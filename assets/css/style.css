@@ -1698,3 +1698,17 @@ Collaborations Section
     border-radius:8px;
 
 }
+
+/* Registration Deadline */
+
+.registration-deadline{
+    text-align:center;
+    margin:25px 0 15px;
+    font-size:1.1rem;
+    color:var(--primary);
+    font-weight:600;
+}
+
+.registration-deadline strong{
+    color:#ffffff;
+}
